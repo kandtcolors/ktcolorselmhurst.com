@@ -1,0 +1,21 @@
+<header>
+	<nav id="mobile-nav" class="visible-xs navbar navbar-default navbar-fixed-top">
+	  <div class="navbar-header">
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+	      <span class="sr-only">Toggle navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-brand" href="{{ "/" | prepend: site.baseurl }}"><img id="logo" src="{{ site.imagebase }}/kt_logo_small.png" alt="K&amp;T Colors"></a>
+		</div>
+	  <div class="collapse navbar-collapse navbar-ex1-collapse">
+			<ul id="menu-main-menu" class="nav navbar-nav navbar-right">
+				{% include nav.html %}
+			</ul>
+		</div>
+	</nav>
+	<nav id="full-nav" class="hidden-xs navbar navbar-fixed-top">
+		<a href="{{ "/" | prepend: site.baseurl }}"><img id="logo" src="{{ site.imagebase }}/kt_logo_small.png" alt="K&amp;T Colors"></a>
+    <div id="main-button-menu" class="btn-group"><a title="Framing" href="{{ "/framing/" | prepend: site.baseurl }}" class="btn btn-success">Framing</a><a title="Art Supplies" href="{{ "/art-supplies/" | prepend: site.baseurl }}" class="btn btn-info">Art Supplies</a><a title="Art Classes" href="{{ "/art-classes/" | prepend: site.baseurl }}" class="btn btn-primary">Art Classes</a><a title="Original Artwork" href="{{ "/original-artwork/" | prepend: site.baseurl }}" class="btn btn-warning">Original Artwork</a><a title="About Us" href="{{ "/about-us/" | prepend: site.baseurl }}" class="btn btn-danger">About Us</a><a title="Contact Us" href="{{ "/contact-us/" | prepend: site.baseurl }}" class="btn btn-success">Contact Us</a></div>	</nav>
+</header>

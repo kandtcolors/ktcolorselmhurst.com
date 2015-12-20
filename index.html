@@ -1,0 +1,91 @@
+---
+layout: default
+title: 'Home'
+bodyClasses: index
+---
+
+<div id="home-carousel" class="carousel slide">
+   <div class="carousel-inner">
+      <div id="frame-slider" class="item active">
+         <div class="wrapper">
+            <div class="carousel-caption">
+               <h2>Custom Framing</h2>
+               <p>High quality custom framing at an affordable price for your beautiful artwork and memorabilia.</p>
+               <a class="btn btn-lg btn-primary" href="{{ "/framing/" | prepend: site.baseurl }}">Read More<i class="fa fa-chevron-circle-right right"></i></a>
+            </div>
+         </div>
+      </div>
+      <div id="paint-slider" class="item">
+         <div class="wrapper">
+            <div class="carousel-caption">
+               <h2>Art Supplies</h2>
+               <p>Make Your Artwork Come To Life</p>
+               <a class="btn btn-lg btn-danger" href="{{ "/art-supplies/" | prepend: site.baseurl }}">Read More<i class="fa fa-chevron-circle-right right"></i></a>
+            </div>
+         </div>
+      </div>
+      <div id="store-slider" class="item">
+         <div class="wrapper">
+            <div class="carousel-caption">
+               <h2>Come Visit Us</h2>
+               <p>We are open 6 days a week. Contact us or come stop by.</p>
+               <a class="btn btn-lg btn-success" href="{{ "/contact-us/" | prepend: site.baseurl }}">Contact Us<i class="fa fa-chevron-circle-right right"></i></a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <a class="left carousel-control" href="#home-carousel" data-slide="prev">
+   <span class="icon-prev"></span>
+   </a>
+   <a class="right carousel-control" href="#home-carousel" data-slide="next">
+   <span class="icon-next"></span>
+   </a>
+   <div class="wrapper">
+      <ol class="carousel-indicators">
+         <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+         <li data-target="#home-carousel" data-slide-to="1"></li>
+         <li data-target="#home-carousel" data-slide-to="2"></li>
+      </ol>
+   </div>
+</div>
+<section id="home">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-8">
+            <p id="site-summary" class="lead" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">K&amp;T Colors</span> is your one stop location for custom framing, artist supplies, and creative gift ideas. We offer exquisite custom framing for original fine art and prints of all types. We bring to life photographs, sports jerseys, needle art, memorabilia, specialized shadow boxes, and more. We have a wide variety of materials for the fine artist including a great selection of instructional books. To complete our picture, we offer art lessons for children and young adults.</p>
+         </div>
+         <div class="col-md-4">
+            {% include store-hours.html %}
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-12">
+            <p id="contact-line" class="lead text-center" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><a href="{{ "/contact-us/" | prepend: site.baseurl }}"><span itemprop="streetAddress">568 South York Street</span></a>, <span itemprop="addressLocality">Elmhurst, IL</span> <span itemprop="postalCode">60126</span> &bull; Phone: <span itemprop="telephone">(630) 834-6040</span> &bull; Email: <a href="mailto:maryanngorski6@gmail.com" target="_blank"><span itemprop="email">maryanngorski6@gmail.com</span></a></p>
+         </div>
+      </div>
+      <hr>
+      <div class="row">
+         <div class="col-md-7 col-md-push-5">
+            <h2 class="no-top">Custom Framing</h2>
+            <p class="lead">Make Your Artwork Come To Life</p>
+            <p>Whether your wish to frame an original painting, an antique etching, a family portrait, a prized photo or street art from your last vacation, K&amp;T Colors can create a design for you and your home.</p>
+            <p><a class="btn btn-lg btn-danger" href="{{ "/framing/" | prepend: site.baseurl }}">Read More<i class="fa fa-chevron-circle-right right"></i></a></p>
+         </div>
+         <div class="col-md-5 col-md-pull-7 small-top">
+            <img src="{{ site.imagebase }}/frames/frame-wood-close.jpg" alt="Frames">
+         </div>
+      </div>
+      <hr>
+      <div class="row">
+         <div class="col-md-7">
+            <h2 class="no-top">Art Supplies</h2>
+            <p class="lead">High Quality, Affordable Prices</p>
+            <p>K&amp;T Colors stocks a wide variety of art supplies, including oil, acrylic, watercolor, ink, gouache pigments, pastels, colored pencils and markers, canvas in many forms and every type of paper in many sizes and colors as pads, pencils, pens, markers, brushes and accessories, and much more.</p>
+            <p><a class="btn btn-lg btn-success" href="{{ "/art-supplies/" | prepend: site.baseurl }}">Read More<i class="fa fa-chevron-circle-right right"></i></a></p>
+         </div>
+         <div class="col-md-5 small-top">
+            <img src="{{ site.imagebase }}/coloredpencilsfull2.jpg" alt="Colored Pencils">
+         </div>
+      </div>
+   </div>
+</section>

@@ -1,0 +1,19 @@
+# Site settings
+title: 'K&amp;T Colors'
+company_name: 'K&amp;T Colors'
+description: 'Custom Framing, Art Supplies &amp; Art Classes | Elmhurst, Illinois'
+baseurl: ''
+imagebase: '/dist/images'
+
+# Build settings
+permalink: pretty
+
+exclude: [
+  'node_modules',
+  'package.json',
+  'gulpfile.js',
+  'README.md',
+  'SOURCE'
+]
+
+languages: ['en']
