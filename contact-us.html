@@ -4,41 +4,6 @@ title: 'Contact Us'
 bodyClasses: contact
 ---
 
-<script src="//maps.googleapis.com/maps/api/js?v=3&amp;"></script>
-<script>
-   google.maps.visualRefresh = true;
-   var map;
-   function initialize() {
-   	var thisLatLng = new google.maps.LatLng(41.882911, -87.940073);
-     var mapOptions = {
-       zoom: 15,
-       center: thisLatLng,
-       mapTypeId: google.maps.MapTypeId.ROADMAP
-     };
-     map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-     var infowindow = new google.maps.InfoWindow({
-     	content: '<div class="black"><strong>K&amp;T Colors</strong><br>568 South York Street<br>Elmhurst, IL 60126</div>',
-     	maxWidth: 200
-     });
-
-     var marker = new google.maps.Marker({
-     	position: thisLatLng,
-     	map: map,
-     	title: 'K&T Colors'
-     });
-
-     google.maps.event.addListener(marker, 'click', function() {
-       infowindow.open(map,marker);
-     });
-
-     google.maps.event.trigger(marker, 'click', {
-     	latLng: new google.maps.LatLng(0, 0)
-     });
-   }
-
-   google.maps.event.addDomListener(window, 'load', initialize);
-</script>
 <section>
    <div class="container">
       <div class="row">
@@ -65,6 +30,7 @@ bodyClasses: contact
             </article>
          </div>
          <div class="col-sm-8">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.466766214866!2d-87.94240558437835!3d41.88281777309755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e4ca24016e087%3A0x7aa20b24bbd2f33e!2sK%20%26%20T%20Colors%20Inc!5e0!3m2!1sen!2sus!4v1585836761035!5m2!1sen!2sus" width="100%"" height="680" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <div id="map-canvas" class="small-top"></div>
          </div>
       </div>
