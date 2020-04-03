@@ -401,6 +401,65 @@ img.artwork {
 	font-size: 1.5rem;
 }
 
+footer svg {
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 0.25em;
+	margin-right: 0.5em;
+	width: 1em;
+	height: 1em;
+}
+
+.social-media {
+
+	margin-top: 1rem;
+	font-size: 2rem;
+	text-align: center;
+
+	@media (min-width: 600px) {
+		font-size: 3rem;
+	}
+
+	svg {
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 0.5em;
+		width: 1em;
+		height: 1em;
+	}
+
+	a {
+
+		display: inline-block;
+		vertical-align: middle;
+
+		+ a {
+			margin-left: 1em;
+		}
+
+	}
+
+	.social-facebook,
+	.social-instagram {
+
+		&:hover {
+			color: inherit;
+			opacity: 0.9;
+			text-decoration: none;
+		}
+
+	}
+
+}
+
+.social-facebook {
+	color: $facebook-blue;
+}
+
+.social-instagram {
+	color: $instagram-purple;
+}
+
 @media (min-width: 768px) {
 
 	.navbar-nav > li > a {

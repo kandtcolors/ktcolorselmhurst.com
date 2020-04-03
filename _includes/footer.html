@@ -7,6 +7,8 @@
             <ul id="menu-footer-menu" class="menu">
 							<li{% if page.url == "/" %} class="current-menu-item"{% endif %}><a title="Home" href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
 							{% include nav.html %}
+							<li>{{ site.social_facebook_a }}</li>
+							<li>{{ site.social_instagram_a }}</li>
             </ul>
           </div>
 				</nav>
