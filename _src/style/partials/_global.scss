@@ -395,6 +395,12 @@ img.artwork {
 	column-count: 2;
 }
 
+.highlighted {
+	color: $red;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
 @media (min-width: 768px) {
 
 	.navbar-nav > li > a {
